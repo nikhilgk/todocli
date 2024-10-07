@@ -37,11 +37,11 @@ func (t *Table) getColor(todo *todotxt.Task) tcell.Color {
 	case todo.Completed:
 		return tcell.ColorGray
 	case todo.Priority() == 'A':
-		return tcell.ColorBlue
+		return tcell.ColorPeachPuff
 	case todo.Priority() == 'B':
 		return tcell.ColorAqua
 	case todo.Priority() == 'C':
-		return tcell.ColorPurple
+		return tcell.ColorPaleGreen
 	}
 	return tcell.ColorWhite
 }
